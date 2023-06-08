@@ -32,18 +32,21 @@ _{This is a detailed description of your application. Give as much detail as nee
 Describe: pigLatin()
 
 Test: "It will find each element starting in a vowel."
-Code: const text ="this is a sentence"
+Code:
+const text = "this is a sentence"
+pigLatin(text)
 Expected Output: ["is", "a"]
 
 Test: "It will add 'way' to the end of words that begin with a vowel."
 Code:
 const text = "This is a sentence"
-pigLatin("a");
+pigLatin(text);
 Expected Output: "This is away sentence"
 
 Test: "It will move all of the first consecutive consonants to the end and add 'ay'."
 Code:
 const text = "code";
+pigLatin(text)
 Expected Output: "odecay";
 
 Test: "It will move 'qu' to the end when it comes after a consonant."
