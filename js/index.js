@@ -6,10 +6,11 @@ function pigLatin(text) {
     textArray.forEach(function(element) {
         const char1 = element[0].toLowerCase();
         if (vowels.includes(char1)) {
-            elementsWVowels.push(element)
+            elementsWVowels.push(element + "way")
         }
     })
     return elementsWVowels;
 }
 
-console.log(pigLatin("hello world this is a test"));
+const text = "hello world this is a test";
+console.log(pigLatin(text));
